@@ -27,7 +27,10 @@
       </li>
 
       <li>
-        <a class="flex flex-col items-center gap-0.5 px-5 sm:flex-row sm:gap-2">
+        <router-link
+          to="/repositories"
+          class="flex flex-col items-center gap-0.5 px-5 sm:flex-row sm:gap-2"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -43,10 +46,13 @@
             />
           </svg>
           仓库
-        </a>
+        </router-link>
       </li>
       <li>
-        <a class="flex flex-col items-center gap-0.5 px-5 sm:flex-row sm:gap-2">
+        <router-link
+          to="/explore"
+          class="flex flex-col items-center gap-0.5 px-5 sm:flex-row sm:gap-2"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -62,10 +68,13 @@
             />
           </svg>
           探索
-        </a>
+        </router-link>
       </li>
       <li>
-        <a class="flex flex-col items-center gap-0.5 px-5 sm:flex-row sm:gap-2">
+        <router-link
+          to="profile"
+          class="flex flex-col items-center gap-0.5 px-5 sm:flex-row sm:gap-2"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
@@ -81,12 +90,9 @@
             />
           </svg>
           我的
-        </a>
+        </router-link>
       </li>
     </ul>
   </footer>
 </template>
-<script setup lang="ts">
-import avatar from "~/assets/avatar.jpg";
-const Avatar = avatar;
-</script>
+<script setup lang="ts"></script>

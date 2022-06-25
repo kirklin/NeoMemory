@@ -17,6 +17,21 @@ const routes: RouteRecordRaw[] = [
     component: () => import("~/views/home/index.vue"),
   },
   {
+    path: "/repositories",
+    name: "Repositories",
+    component: () => import("~/views/repositories/index.vue"),
+  },
+  {
+    path: "/explore",
+    name: "Explore",
+    component: () => import("~/views/explore/index.vue"),
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    component: () => import("~/views/profile/index.vue"),
+  },
+  {
     path: "/:pathMatch(.*)*",
     redirect: "/404",
   },
